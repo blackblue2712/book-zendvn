@@ -1,0 +1,18 @@
+RewriteEngine On
+
+
+RewriteRule 	index.com								index.php?mod=default&controller=index&action=index
+RewriteRule 	category.html							index.php?mod=default&controller=category&action=index
+RewriteRule 	my-account.html							index.php?mod=default&controller=user&action=index
+RewriteRule 	cart.html								index.php?mod=default&controller=user&action=cart
+RewriteRule 	history.html							index.php?mod=default&controller=user&action=history
+RewriteRule 	changepass.html							index.php?mod=default&controller=user&action=changepass
+RewriteRule 	register.html							index.php?mod=default&controller=index&action=register
+RewriteRule 	login.html								index.php?mod=default&controller=index&action=login
+RewriteRule 	logout.html								index.php?mod=default&controller=index&action=logout
+RewriteRule 	([A-z0-9_-]+)-([0-9]+)\.html			index.php?mod=default&controller=book&action=list&category_id=$2
+RewriteRule 	([A-z0-9_-]+)/([A-z0-9_-]+)/([0-9]+)-([0-9]+)\.html																																	index.php?mod=default&controller=book&action=detail&book_id=$3&category_id=$4
+
+
+
+
